@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Cluster",
+        "description": "Please provide a name for this Kubernetes cluster connection and upload your kubeconfig file. The file will be securely stored in your Home Assistant configuration directory.",
+        "data": {
+          "name": "Connection Name",
+          "kubeconfig_file": "Kubeconfig File"
+        },
+        "data_description": {
+          "name": "Enter a descriptive name for this Kubernetes cluster connection (e.g., 'Production Cluster', 'Dev Environment')",
+          "kubeconfig_file": "Upload your Kubernetes configuration file (.yaml or .yml format)"
+        }
+      }
+    },
+    "error": {
+      "invalid_file": "The uploaded file is not a valid kubeconfig file. Please ensure it's a YAML file with the required Kubernetes configuration structure.",
+      "required": "This field is required.",
+      "name_exists": "A connection with this name already exists. Please choose a different name."
+    }
+  },
+  "flow_title": "Kube Assistant - Setup"
+}
