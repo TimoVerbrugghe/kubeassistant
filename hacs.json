@@ -1,0 +1,10 @@
+{
+  "name": "KubeAssistant",
+  "content_in_root": false,
+  "filename": "kubeassistant",
+  "country": "BE",
+  "persistent_directory": "",
+  "hacs": "1.6.0",
+  "zip_release": false,
+  "hide_default_branch": false
+}
